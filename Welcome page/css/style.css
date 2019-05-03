@@ -1,0 +1,51 @@
+@charset "UTF-8";
+HTML, body {
+  padding: 0px;
+  margin: 0px;
+}
+
+* {
+  border: 1px solid #000;
+  font-family: 微軟正黑體;
+  text-align: center;
+  position: relative;
+}
+
+#welcome_banner {
+  height: 400px;
+}
+#welcome_banner .navi_button {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+#welcome_banner .navi_button .block {
+  width: 30px;
+  margin-bottom: 6px;
+  border: 2px solid #000;
+  box-sizing: border-box;
+}
+#welcome_banner h3 {
+  font-size: 1.2rem;
+}
+#welcome_banner h1 {
+  font-size: 2.5rem;
+}
+#welcome_banner .START {
+  height: 13%;
+  width: 20%;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+
+#trailer {
+  height: 400px;
+}
+
+#info {
+  height: 400px;
+}
+
+#navi_bar {
+  height: 300px;
+}
