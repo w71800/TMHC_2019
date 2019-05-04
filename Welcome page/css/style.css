@@ -46,11 +46,7 @@ HTML, body {
   border-bottom: 1px solid #000;
 }
 #trailer .container {
-  padding: 20px;
-}
-#trailer .container .video {
-  padding: 150px;
-  border-radius: 20px;
+  padding: 15px;
 }
 
 #info {
