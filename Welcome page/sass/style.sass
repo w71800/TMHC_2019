@@ -1,9 +1,11 @@
+// 先於全畫面寬度 526 px 環境下建置
+
 HTML, body
   padding: 0px
   margin: 0px
 
 *
-  // border: 1px solid #000
+  border: 1px solid #000
   font-family: 微軟正黑體
   text-align: center
   position: relative
@@ -21,24 +23,31 @@ HTML, body
       margin-bottom: 6px
       border: 2px solid #000
       box-sizing: border-box
-  .text
-    margin-top: 10%
-    h3
-      font-size: 1.2rem
-      letter-spacing: 3px
-    h1
-      font-size: 2.5rem
-      letter-spacing: 8px
-  .START
-    border: 3px solid #000
-    height: 13%
-    width: 20%
-    border-radius: 20px
-    margin: 0 auto
+  .container
+    .text
+      margin-top: 5%
+      h3
+        font-size: 1.2rem
+        letter-spacing: 3px
+      h1
+        font-size: 2.5rem
+        letter-spacing: 8px
+    .START
+      border: 3px solid #000
+      height: 13%
+      width: 20%
+      border-radius: 20px
+      margin: 0 auto
     
 #trailer
-  height: 400px
+  .video
+    padding: 150px
 #info
-  height: 400px
+  .container
+    .upper
+      .col
+        padding: 15px
+        .text
+          padding: 30px
+          line-height: 2rem
 #navi_bar
-  height: 300px

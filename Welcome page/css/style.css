@@ -5,6 +5,7 @@ HTML, body {
 }
 
 * {
+  border: 1px solid #000;
   font-family: 微軟正黑體;
   text-align: center;
   position: relative;
@@ -25,18 +26,18 @@ HTML, body {
   border: 2px solid #000;
   box-sizing: border-box;
 }
-#welcome_banner .text {
-  margin-top: 10%;
+#welcome_banner .container .text {
+  margin-top: 5%;
 }
-#welcome_banner .text h3 {
+#welcome_banner .container .text h3 {
   font-size: 1.2rem;
   letter-spacing: 3px;
 }
-#welcome_banner .text h1 {
+#welcome_banner .container .text h1 {
   font-size: 2.5rem;
   letter-spacing: 8px;
 }
-#welcome_banner .START {
+#welcome_banner .container .START {
   border: 3px solid #000;
   height: 13%;
   width: 20%;
@@ -44,14 +45,14 @@ HTML, body {
   margin: 0 auto;
 }
 
-#trailer {
-  height: 400px;
+#trailer .video {
+  padding: 150px;
 }
 
-#info {
-  height: 400px;
+#info .container .upper .col {
+  padding: 15px;
 }
-
-#navi_bar {
-  height: 300px;
+#info .container .upper .col .text {
+  padding: 30px;
+  line-height: 2rem;
 }
