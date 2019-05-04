@@ -5,7 +5,6 @@ HTML, body {
 }
 
 * {
-  border: 1px solid #000;
   font-family: 微軟正黑體;
   text-align: center;
   position: relative;
@@ -32,14 +31,20 @@ HTML, body {
   letter-spacing: 8px;
 }
 #welcome_banner .container .START {
+  cursor: pointer;
   border: 3px solid #000;
   height: 65px;
   width: 150px;
   border-radius: 20px;
   margin: 80px auto;
   line-height: 61px;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 600;
+  letter-spacing: 2px;
+}
+#welcome_banner .container .START:hover {
+  background-color: #555;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 #trailer {
@@ -69,20 +74,41 @@ HTML, body {
   border-bottom: 3px solid #000;
 }
 
-#navi_bar .container .row .col-4 {
-  padding: 15px;
+#navi_bar {
+  background-color: #555;
+  color: rgba(255, 255, 255, 0.8);
 }
-#navi_bar .container .row .col-4 .botton {
+#navi_bar .container-fluid {
+  padding: 15px 30px;
+  max-width: 724px;
+}
+#navi_bar .container-fluid .row .col-4 .botton {
   text-align: left;
-  font-size: 1.1rem;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  font-weight: 400;
+  cursor: pointer;
+}
+#navi_bar .container-fluid .row .col-4 .botton:hover {
+  color: orange;
+}
+#navi_bar .container-fluid .row .col-4 .botton:hover .item {
+  color: white;
+}
+#navi_bar .container-fluid .row .col-4 .botton span {
+  font-weight: 100;
+  font-size: 7px;
+  opacity: 0.3;
+}
+#navi_bar .container-fluid .row .col-4 .botton .expandable_list {
+  position: absolute;
+  left: 2.5rem;
+  transform: translateY(5px);
+}
+#navi_bar .container-fluid .row .col-4 .botton .expandable_list .item {
+  font-size: 0.8em;
+  font-weight: 200;
+}
+#navi_bar .container-fluid .row .unlist .botton {
   margin-bottom: 10px;
-}
-#navi_bar .container .row .col-4 ul {
-  display: inline-block;
-  padding: 10px 20px;
-  list-style-type: none;
-  margin-bottom: 0px;
-}
-#navi_bar .container .row .col-4 ul li {
-  font-size: 0.6em;
 }
