@@ -11,6 +11,58 @@ HTML, body {
   box-sizing: border-box;
 }
 
+#navi_switch {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  font-size: 0px;
+}
+#navi_switch .line {
+  width: 28px;
+  margin-bottom: 5px;
+  height: 4px;
+  background-color: #999;
+}
+
+#navi_bar {
+  position: absolute;
+  height: 100vh;
+  width: 20%;
+  background-color: #555;
+}
+#navi_bar .navi_text {
+  position: absolute;
+  top: 15%;
+}
+#navi_bar .navi_text .botton {
+  text-align: left;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  font-weight: 400;
+  cursor: pointer;
+  margin-bottom: 70px;
+}
+#navi_bar .navi_text .botton:hover {
+  color: orange;
+}
+#navi_bar .navi_text .botton:hover .item {
+  color: white;
+}
+#navi_bar .navi_text .botton span {
+  font-weight: 100;
+  font-size: 7px;
+  opacity: 0.3;
+}
+#navi_bar .navi_text .botton .expandable_list {
+  position: absolute;
+  left: 1.5rem;
+  transform: translateY(5px);
+}
+#navi_bar .navi_text .botton .expandable_list .item {
+  font-size: 0.8em;
+  font-weight: 200;
+}
+
 #welcome_banner {
   border-bottom: 1px solid #000;
 }
@@ -25,18 +77,21 @@ HTML, body {
   letter-spacing: 3px;
   margin-bottom: 40px;
   line-height: 1.5rem;
+  padding-left: 3px;
 }
 #welcome_banner .container .text h1 {
   font-size: 2.3rem;
-  letter-spacing: 8px;
+  letter-spacing: 20px;
+  line-height: 3.5rem;
+  padding-left: 20px;
 }
 #welcome_banner .container .START {
   cursor: pointer;
   border: 3px solid #000;
   height: 65px;
-  width: 150px;
+  width: 140px;
   border-radius: 20px;
-  margin: 80px auto;
+  margin: 60px auto;
   line-height: 61px;
   font-size: 25px;
   font-weight: 600;
@@ -67,48 +122,70 @@ HTML, body {
   border: 2px solid #888;
 }
 #info .container .bottom_row .col-6 {
-  padding: 20px 50px;
+  padding: 15px 15px;
+  text-align: center;
 }
 #info .container .bottom_row .col-6 .button {
+  display: inline-block;
   font-size: 1.5rem;
-  border-bottom: 3px solid #000;
+  border-bottom: 3px solid white;
+  width: 8rem;
+  cursor: pointer;
+}
+#info .container .bottom_row .col-6 .button:hover {
+  color: orange;
+  border-bottom: 3px solid orange;
 }
 
-#navi_bar {
+#navi {
   background-color: #555;
   color: rgba(255, 255, 255, 0.8);
 }
-#navi_bar .container-fluid {
+#navi .container-fluid {
   padding: 15px 30px;
   max-width: 724px;
 }
-#navi_bar .container-fluid .row .col-4 .botton {
+#navi .container-fluid .row .col-4 .botton {
   text-align: left;
   font-size: 1rem;
   letter-spacing: 2px;
   font-weight: 400;
   cursor: pointer;
 }
-#navi_bar .container-fluid .row .col-4 .botton:hover {
+#navi .container-fluid .row .col-4 .botton:hover {
   color: orange;
 }
-#navi_bar .container-fluid .row .col-4 .botton:hover .item {
+#navi .container-fluid .row .col-4 .botton:hover .item {
   color: white;
 }
-#navi_bar .container-fluid .row .col-4 .botton span {
+#navi .container-fluid .row .col-4 .botton span {
   font-weight: 100;
   font-size: 7px;
   opacity: 0.3;
 }
-#navi_bar .container-fluid .row .col-4 .botton .expandable_list {
+#navi .container-fluid .row .col-4 .botton .expandable_list {
   position: absolute;
-  left: 2.5rem;
+  left: 1.5rem;
   transform: translateY(5px);
 }
-#navi_bar .container-fluid .row .col-4 .botton .expandable_list .item {
+#navi .container-fluid .row .col-4 .botton .expandable_list .item {
   font-size: 0.8em;
   font-weight: 200;
 }
-#navi_bar .container-fluid .row .unlist .botton {
+#navi .container-fluid .row .unlist .botton {
   margin-bottom: 10px;
+}
+
+.navi_off {
+  position: absolute;
+  right: -20%;
+}
+
+.navi_on {
+  position: absolute;
+  right: 0%;
+}
+
+.list {
+  margin-bottom: 100px;
 }
