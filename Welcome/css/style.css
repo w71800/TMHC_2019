@@ -1,0 +1,157 @@
+@charset "UTF-8";
+HTML, body {
+  padding: 0px;
+  margin: 0px;
+}
+
+* {
+  border: 1px solid #000;
+  font-family: 微軟正黑體;
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
+}
+
+#navi_bar {
+  position: fixed;
+  height: 100vh;
+  width: 30%;
+  background-color: #555;
+  transition-duration: 0.4s;
+  z-index: 10;
+}
+#navi_bar .navi_text {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+}
+
+#welcome_banner {
+  border-bottom: 1px solid #000;
+  height: 100vh;
+}
+#welcome_banner .container {
+  padding: 30px;
+}
+#welcome_banner .container .text {
+  margin-top: 40px;
+}
+#welcome_banner .container .text h3 {
+  font-size: 1rem;
+  letter-spacing: 3px;
+  margin-bottom: 40px;
+  line-height: 1.5rem;
+  padding-left: 3px;
+}
+#welcome_banner .container .text h1 {
+  font-size: 2.3rem;
+  letter-spacing: 20px;
+  line-height: 3.5rem;
+  padding-left: 20px;
+}
+#welcome_banner .container .START {
+  cursor: pointer;
+  border: 3px solid #000;
+  height: 65px;
+  width: 140px;
+  border-radius: 20px;
+  margin: 60px auto;
+  line-height: 61px;
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-family: "Lato", sans-serif;
+}
+#welcome_banner .container .START:hover {
+  background-color: #555;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#trailer {
+  border-bottom: 1px solid #000;
+}
+#trailer .container {
+  padding: 15px;
+}
+
+#info {
+  border-bottom: 1px solid #000;
+}
+
+section#navi {
+  background-color: #555;
+  color: rgba(255, 255, 255, 0.8);
+  height: 10rem;
+}
+section#navi .container-fluid {
+  padding: 15px 30px;
+  max-width: 724px;
+}
+
+.navi_switch {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  font-size: 0px;
+  cursor: pointer;
+  z-index: 9;
+}
+.navi_switch .line {
+  width: 28px;
+  height: 4px;
+  background-color: #999;
+  transition-duration: 0.2s;
+}
+.navi_switch .center {
+  margin: 5px 0px;
+}
+.navi_switch:hover .line {
+  width: 30px;
+}
+.navi_switch:hover .center {
+  margin: 7px 0px;
+}
+
+.botton {
+  text-align: left;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  font-weight: 400;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  overflow: hidden;
+}
+.botton:hover {
+  color: orange;
+}
+.botton span {
+  font-weight: 100;
+  font-size: 7px;
+  opacity: 0.3;
+}
+.botton .list {
+  position: absolute;
+  left: 1.5rem;
+  transform: translateY(5px);
+}
+.botton .list .item {
+  cursor: pointer;
+  font-size: 0.8em;
+  font-weight: 200;
+  color: white;
+}
+
+.navi_off {
+  position: absolute;
+  right: -30%;
+}
+
+.navi_on {
+  position: fixed;
+  right: 0%;
+  top: 0px;
+}
+
+.list_expand:hover {
+  height: 7rem;
+}
