@@ -8,3 +8,28 @@
     4. 演出人員 / 工作人員
     5. 謝幕（感言）
     6. 幕後花絮
+
+
+## Build Guide
+
+### clone this repo
+
+`git clone git@github.com:w71800/TMHC_2019.git`
+
+### install
+
+```
+cd TMHC_2019
+npm install
+```
+
+### add theme
+
+```
+git submodule init
+git submodule update
+```
+
+### local server
+
+`hexo server`
