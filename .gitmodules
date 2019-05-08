@@ -1,0 +1,3 @@
+[submodule "src/themes/TKL"]
+	path = src/themes/TKL
+	url = https://github.com/musingfox/TKL.git
