@@ -29,3 +29,10 @@ $(".switcher_mrt").click(function()
     $(".switcher_bus").removeClass("hint_border")
     $(".switcher_bus").css("background-color","#F1F3F3")
   })
+
+$(".START").click(function()
+  {
+    $(this).addClass("invisible")
+    $(this).css("height","0")
+    $(".choose").removeClass("invisible")
+  })
