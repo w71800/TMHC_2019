@@ -4,31 +4,24 @@ $(".navi_switch").click(function()
     $("#navi_bar").addClass("navi_on");
   })
 
+$(".navi_switch").on("touchend",function()
+  {
+    $("#navi_bar").removeClass("navi_off");
+    $("#navi_bar").addClass("navi_on");
+  })
+
 $("section").click(function()
   {
     $("#navi_bar").removeClass("navi_on");
     $("#navi_bar").addClass("navi_off");
   })
 
-$(".switcher_bus").click(function()
+$("section").on("touchend",function()
   {
-    $(this).addClass("hint_border")
-    $(this).css("background-color","white")
-    $(".bus").removeClass("invisible")
-    $(".mrt").addClass("invisible") 
-    $(".switcher_mrt").removeClass("hint_border")
-    $(".switcher_mrt").css("background-color","#F1F3F3")
+    $("#navi_bar").removeClass("navi_on");
+    $("#navi_bar").addClass("navi_off");
   })
 
-$(".switcher_mrt").click(function()
-  {
-    $(this).addClass("hint_border")
-    $(this).css("background-color","white")
-    $(".mrt").removeClass("invisible")
-    $(".bus").addClass("invisible")
-    $(".switcher_bus").removeClass("hint_border")
-    $(".switcher_bus").css("background-color","#F1F3F3")
-  })
 
 $(".START").click(function()
   {
@@ -36,3 +29,29 @@ $(".START").click(function()
     $(this).css("height","0")
     $(".choose").removeClass("invisible")
   })
+
+var welcome_width = $(window).width()
+var welcome_height = $(window).height()
+
+function welcome_fullscreen()
+  {
+    if(welcome_width<welcome_height)
+    {
+      $("#welcome_banner").css("height","100vh")  
+      $(".title_straight").removeClass("invisible")
+      $(".title_part").addClass("invisible")
+    }
+    else
+    {
+      $("#welcome_banner").css("height","default") 
+    }
+  }
+
+$(document).ready(function()    
+  {
+    welcome_fullscreen();
+  })
+
+// $('#any-element').on('tap', function (e) {
+// // All the magic happens here
+// })
