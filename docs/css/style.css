@@ -86,7 +86,7 @@ HTML, body {
 }
 
 #welcome_banner {
-  background-image: url(https://upload.cc/i1/2019/05/14/0HKwsu.png);
+  background-image: url(../assets/background.png);
   background-color: black;
   background-size: cover;
   margin-top: 0px;
